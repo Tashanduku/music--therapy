@@ -13,7 +13,7 @@ export default function MusicTherapy() {
     setError(null);
 
     try {
-      const response = await fetch('http://localhost:5000/api/get-song', {
+      const response = await fetch('https://music-therapy.onrender.com/api/get-song', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ mood: userInput })
